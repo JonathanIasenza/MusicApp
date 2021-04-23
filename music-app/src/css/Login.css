@@ -1,0 +1,146 @@
+body,html{
+    background-image: url("../images/background.jpg");
+    background-size:  auto;
+    background-repeat: repeat;
+}
+
+.image-logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    transform: translate(-50%, -50%);
+    filter:drop-shadow(2px 2px 10px rgb(190, 20, 20));
+    transition: all .5s;
+    animation:animationtest 1s infinite;
+}
+
+#music-logo{
+    width: 190px;
+    z-index: -10;
+}
+
+.principal{
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 30px;
+    background-color: rgb(90, 90, 90);
+    
+}
+
+.secondary{
+    text-align: center;
+}
+
+.btn-light{
+    margin-left: 10px;
+    margin-right: 10px;    
+    font-family: "New Rocker";
+    font-size: 50px;
+}
+
+.form-group{
+    font-family: 'New Rocker';
+    font-size: 3vh;
+}
+
+
+.btn-danger{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "New Rocker";
+}
+
+#btn-notfound{
+    outline:none;
+    background-color: inherit;
+    border:none;
+}
+
+#btn-notfound:hover{
+    color:rgb(144, 0, 0);
+}
+
+.alert-container{
+    text-align: center;
+    z-index: 100;
+    max-width: 80%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+
+.rock-app-op{
+    position: absolute;
+    margin-top: 14%;
+    margin-left: 2%;
+    color:#fff;
+    transform: rotate(-20deg);
+    text-shadow: 21px 21px 4px rgb(0, 0, 0);
+    font-family: 'New Rocker';
+    font-size: 10vh;
+    filter: drop-shadow(3px 3px 2px rgb(255, 255, 255)) invert(100%);
+}
+
+/* Responsive design */
+
+/* Width */
+
+@media (max-width:980px){
+    body,html{
+        background-image: url("../images/background.jpg");
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+
+    #music-logo{
+        width: 120px;
+        margin-top: 40px;
+    }
+
+    .principal{
+        max-width: 300px;
+        max-height: 400px;
+    }
+}
+
+@media (max-width:580px){
+    .principal{
+        width: 800px;
+        max-height: 700px;
+    }
+}
+
+
+/* Height */
+
+@media (max-height:520px){
+    #music-logo{
+        display:none;
+    }
+}
+
+@media (min-height:820px){
+    body,html{
+        background-image: url("../images/background.jpg");
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+
+    #music-logo{
+        margin-bottom: 100px;
+    }
+}
+
+
+@keyframes animationtest{
+    0%  { -webkit-transform:rotateZ(-1deg); }
+    50% { -webkit-transform:rotateZ( 0deg) scale(.8); }
+    100%{ -webkit-transform:rotateZ( 3deg); }
+}

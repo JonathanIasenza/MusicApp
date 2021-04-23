@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="MobileOptimized" content="width" />
+    <title>Music App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+    </div>
+    <audio autoplay id="myaudio" src="./music.mp3" volume="20%">
+          Your browser don't support audio players.
+  </audio>
+  <script>
+    var audio = document.getElementById("myaudio");
+    audio.volume = 0.4;
+  </script>
+  </body>
+</html>

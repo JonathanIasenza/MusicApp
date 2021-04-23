@@ -1,0 +1,43 @@
+body,html{
+    background-image: url("../images/background.jpg");
+    background-size:  auto;
+    background-repeat: repeat;
+}
+
+.title-menu {
+    text-align: center;
+    font-size: 12vh;
+    color:#fff;
+    font-family: 'New Rocker', cursive;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    padding: 2%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+.logout-btn{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 20px;
+    font-family: 'New Rocker', cursive;
+}
+
+
+.btn-dark:hover{
+    background-color: rgb(190, 7, 7);
+}
+
+.link{
+    color:#fff;
+}
+
+.link:visited{
+    color:#fff;
+}
+
+
+
+

@@ -1,0 +1,155 @@
+/* Title */
+#bands-title{
+    color:#fff;
+    text-align: center;
+    font-family: 'New Rocker', cursive;
+    font-size: 9vh;
+}
+
+/* List of bands and buttons */
+.list-bands{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color:#fff;
+    padding-bottom: 10px;
+    width: 100%;
+    height: max-content;
+    background-color: rgba(211, 211, 211, 0.048);
+    font-family: 'New Rocker';
+}
+
+.btn-show{
+    margin-left:10px;
+    color:#fff;
+    border: none;
+    background-color: inherit;
+    transition: all .4s;
+}
+
+.btn-show:hover{
+    filter: drop-shadow(1px 1px 18px #fff)
+}
+
+/* Checkboxs Search & Table */
+
+.check-container{
+    display: flex;
+    margin: auto;
+    width: 950px;
+    text-align: center;
+}
+
+.check{
+    color: #fff;
+    display: inline-flex;
+    justify-content: end;
+    width: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 5px;
+}
+
+.check:active{
+    color:rgb(170, 170, 170);
+}
+
+.check:hover{
+    color:rgb(153, 153, 153);
+}
+
+.search-container{
+    display: block;
+    width: 300px;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 20px;
+}
+
+#search{
+    width: 280px;
+    height: 50px;
+}
+
+
+#table-data{
+    width: 800px;
+    margin: auto;
+    margin-top: 2%;
+    text-shadow: 5px 5px 5px #000;
+    font-size: 4vh;
+}
+
+#first-tr{
+    background-color: rgb(10, 10, 10);
+}
+
+#th-second:hover{
+    background-color: rgb(24, 24, 24);
+}
+
+#btn-circle{
+    background-color: inherit;
+    border: none;
+}
+
+#icon-circle{
+    transition: all .5s;
+}
+
+#icon-circle:hover{
+    filter: drop-shadow(2px 2px 6px rgb(139, 16, 16))
+}
+
+
+
+/* Responsive Design */
+
+@media (max-width:1124px){
+    .check-container{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 0%;
+        margin: auto;
+    }
+
+    .rock-app-op{
+        display: none;
+    }
+
+    .search-container{
+        height: 150px;
+        padding-top: 4%;
+    }
+
+    #search{
+        margin: auto;
+        width: 280px;
+        margin-top: 10%;
+    }
+
+    .check{
+        margin: auto;
+        display: flex;
+        padding: 5px;
+    }
+}
+
+@media (max-width:780px){
+    #table-data{
+        max-width: 350px
+    }
+
+    .check-container{
+        width: 450px;
+    }
+
+    .search-container{
+        padding-top: 6%;
+        
+    }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
